@@ -3,7 +3,28 @@
 #include <stdlib.h>
 
 /**
- * alloc_grid : allocate an double dimension array as a grid.
+* free_all : free all tabs in the grid.
+* @grid : the double dimension array.
+* @height : Height of the array.
+*
+* Return : Nothing0
+*/
+
+void free_all(int **grid, int height)
+{
+	int	h;
+
+	h = 0;
+	while (grid && h < height)
+	{
+		free(grid[h]);
+		h++;
+	}
+	free(grid);
+}
+
+/**
+ * alloc_grid : allocate an double dimension array as a grid initialisied with 0.
  * @width : width of grid
  * @height : height of grid
  *
@@ -27,7 +48,7 @@ int		**alloc_grid(int width, int height)
 		grid[i] = (int *)malloc(sizeof(int) * width);
 		if (grid[i] == NULL)
 		{
-			free(grid);
+			free_all(grid, i);
 			return (NULL);
 		}
 		j = 0;
