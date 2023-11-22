@@ -3,7 +3,9 @@
 /**
 * main - prints the name of the program
 * @argc : the number of args
-* @argv : array of the args 
+* @argv : array of the args
+*
+* Return : Always return 0.
 */
 
 int main(int argc, char **argv)
