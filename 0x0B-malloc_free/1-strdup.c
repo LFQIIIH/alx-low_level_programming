@@ -2,6 +2,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+* _strlen - counts lenght of string.
+* @str : string to count lenght
+*
+* Return: Returns the lenght of string.
+*/
+
 unsigned int	_strlen(char *str)
 {
 	unsigned int	i;
@@ -11,6 +18,13 @@ unsigned int	_strlen(char *str)
 		i++;
 	return (i);
 }
+
+/**
+* _strdup - create allocated copie of string
+* @str : copied string.
+*
+* Return: Returns a pointer to copied array, or NULL if it fails
+*/
 
 char	*_strdup(char *str)
 {
