@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
-* free_all : free all tabs in the grid.
+* free_all - free all tabs in the grid.
 * @grid : the double dimension array.
 * @height : Height of the array.
 *
@@ -24,7 +24,7 @@ void free_all(int **grid, int height)
 }
 
 /**
- * alloc_grid : allocate an double dimension array as a grid initialisied with 0.
+ * alloc_grid - allocate double dimension array as a grid initialisied with 0.
  * @width : width of grid
  * @height : height of grid
  *
