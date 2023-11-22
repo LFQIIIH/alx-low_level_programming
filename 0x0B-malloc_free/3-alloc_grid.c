@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * alloc_grid : allocate an double dimension array
+ * alloc_grid : allocate an double dimension array as a grid.
  * @width : width of grid
  * @height : height of grid
  *
@@ -26,7 +26,10 @@ int		**alloc_grid(int width, int height)
 	{
 		grid[i] = (int *)malloc(sizeof(int) * width);
 		if (grid[i] == NULL)
+		{
+			free(grid);
 			return (NULL);
+		}
 		j = 0;
 		while (j < width)
 		{
