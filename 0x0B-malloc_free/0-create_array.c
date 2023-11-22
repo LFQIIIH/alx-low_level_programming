@@ -9,7 +9,7 @@ char	*create_array(unsigned int size, char c)
 
 	
 	buffer = (char *)malloc(sizeof(char) * size);
-	if (buffer == NULL)
+	if (buffer == NULL || !size)
 		return (NULL);
 	i = 0;
 	while (i < size)
