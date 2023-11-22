@@ -1,0 +1,1 @@
+malloc_free this project aims to learn and practice memory allocation and freeing it.
