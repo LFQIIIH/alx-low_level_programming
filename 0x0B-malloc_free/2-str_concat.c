@@ -45,12 +45,12 @@ char	*str_concat(char *s1, char *s2)
 		i++;
 	}
 	j = 0;
-	while (s2 && s2[j])
-	{
-	    new_str[i] = s2[j];
-	    j++;
-	    i++;
-	}
+		while (s2 && s2[j])
+		{
+			new_str[i] = s2[j];
+			j++;
+			i++;
+		}
 	new_str[i] = 0;
 	return (new_str);
 }
