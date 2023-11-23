@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
-* check - check the args validation. 
-* @arg: the argument to check. 
-*
+* check - check the args validation.
+* @arg: the argument to check.
 * Return: 0 if valid arg 1 if not.
 */
 
