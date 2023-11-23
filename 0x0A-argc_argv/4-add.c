@@ -16,7 +16,7 @@ int main(int argc, char **argv)
 	res = 0;
 	while (i < argc)
 	{
-		if (!(argv[i][0] == '-' || argv[i][0] == '+') && !(argv[i][0] >= 48 && argv[i][0] <= 57))
+		if (!(argv[i][0] >= 48 && argv[i][0] <= 57))
 		{
 			printf("Error\n");
 			return (1);
