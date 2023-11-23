@@ -1,12 +1,11 @@
 #include "main.h"
 
 /**
- * check - check the args validation. 
- * 
- * @arg: the argument to check. 
- *
- * Return: 0 if valid arg 1 if not.
- */
+* check - check the args validation. 
+* @arg: the argument to check. 
+*
+* Return: 0 if valid arg 1 if not.
+*/
 
 int check(char *arg)
 {
