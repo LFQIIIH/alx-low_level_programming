@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-* main - prints the name of the program
+* main - check the code for ALX School students.
 *
-* Return : Always 0.
+* Return: Always 0.
 */
 
 int main(int argc, char **argv)
