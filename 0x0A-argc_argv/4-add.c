@@ -15,7 +15,9 @@ int check(char *arg)
 	while (arg[i])
 	{
 		if (!(arg[i] >= 48 && arg[i] <= 57))
+		{
 			return (1);
+		}
 		i++;
 	}
 	return (0);
