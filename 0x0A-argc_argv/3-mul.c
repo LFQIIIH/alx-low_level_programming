@@ -9,7 +9,16 @@
 
 int main(int argc, char **argv)
 {
-	(void)argc;
-	printf("%s\n", argv[0]);
+	int	x;
+	int	y;
+
+	if (argc != 3)
+	{
+		printf("Error\n");
+		return (1);
+	}
+	x = atoi(argv[1]);
+	y = atoi(argv[2]);
+	printf("%d\n", x * y);
 	return (0);
 }
