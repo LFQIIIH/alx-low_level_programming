@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main: prints the name of the source code.
+ * main - prints the name of the source code.
  *
- * Return : Always 0.
+ * Return: Always 0.
  */
 int	main(void)
 {
