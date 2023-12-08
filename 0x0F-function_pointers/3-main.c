@@ -18,6 +18,11 @@ int	main(int ac, char **av)
 		printf("Error\n");
 		return (98);
 	}
+	if (av[2][1] != 0)
+	{
+		printf("Error\n");
+		exit(99);
+	}
 	operate.op = av[2];
 	a = atoi(av[1]);
 	b = atoi(av[3]);
